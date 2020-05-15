@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_mine">
+
+    <RelativeLayout
+        android:id="@+id/headMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/baseColor">
+
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@mipmap/fanhui"
+            android:text="返回"
+            android:textColor="@color/ghostWhite"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="掌上新闻"
+            android:textColor="@color/ghostWhite"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headMenu">
+
+        <com.lenovo.mynews.util.CircleImage
+            android:id="@+id/tv_weixinPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:src="@mipmap/photo" />
+        <TextView
+            android:id="@+id/tv_weixinName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_weixinPhone"
+            android:layout_toRightOf="@id/tv_weixinPhone"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:text="掌上新闻官方微信号"/>
+        <TextView
+            android:id="@+id/tv_weixinNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_weixinName"
+            android:layout_toRightOf="@id/tv_weixinPhone"
+            android:textSize="18sp"
+            android:textColor="#B1AAAA"
+            android:layout_marginTop="10dp"
+            android:text="微信号：zsxw_2020"/>
+    </RelativeLayout>
+
+</RelativeLayout>
